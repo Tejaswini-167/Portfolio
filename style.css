@@ -1,0 +1,103 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 30px;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Link Styling */
+a {
+    color: #bb86fc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #03dac6;
+}
+
+/* Main Container Design */
+main, section {
+    background-color: #1e1e1e;
+    border: 1px solid #2c2c2c;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Profile Image */
+img {
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #333;
+}
+
+/* Navigation Bar */
+nav {
+    background: #232323;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+nav a {
+    background: #2d2d2d;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    background-color: #373737;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Highlight Boxes for Projects/Education */
+.highlight {
+    background: linear-gradient(to right, #333 0%, #444 100%);
+    padding: 15px;
+    border-left: 4px solid #bb86fc;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* Responsive Image */
+@media (max-width: 600px) {
+    img {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
