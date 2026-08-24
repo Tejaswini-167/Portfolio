@@ -7,27 +7,66 @@
 
     <title>Tejaswini Peddireddy | AI & ML Engineer</title>
 
-    <meta name="description"
-        content="Portfolio of Tejaswini Peddireddy - AI & Machine Learning Engineer">
+    <meta name="description" content="Portfolio of Tejaswini Peddireddy - AI & Machine Learning Engineer">
 
     <!-- Google Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- CSS -->
-
     <link rel="stylesheet" href="style.css">
 </head>
+
+<!--================== Achievement Modal ==================-->
+
+<div class="achievement-modal" id="achievementModal">
+    <div class="modal-box">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <!-- LEFT -->
+
+            <div class="modal-left">
+                <img id="mainImage" src="">
+
+                <div class="thumbnail-row">
+                    <img class="thumb active">
+                    <img class="thumb">
+                    <img class="thumb">
+                    <img class="thumb">
+
+                </div>
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="modal-right">
+                <h2 id="modalTitle"></h2>
+
+                <p id="modalDescription"></p>
+
+                <div id="modalDetails"></div>
+                <div class="modal-buttons">
+
+                    <a href="" id="certificateBtn"  target="_blank" class="project-btn">
+                        Certificate
+                    </a>
+
+                    <a href="" id="eventBtn" target="_blank"class="github-btn">
+                      Event Link
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <body>
 
@@ -44,17 +83,14 @@
             <ul class="nav-links">
 
                 <li><a href="#home">Home</a></li>
-
                 <li><a href="#about">About</a></li>
-
+                <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
-
                 <li><a href="#projects">Projects</a></li>
-
+                <li><a href="#certifications">Certificates</a></li>
+                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#experience">Experience</a></li>
-
                 <li><a href="#contact">Contact</a></li>
-
             </ul>
 
             <div class="menu-btn">
@@ -62,15 +98,12 @@
                 <i class="fa-solid fa-bars"></i>
 
             </div>
-
         </nav>
-
     </header>
 
     <!--================ HERO ================-->
 
     <section class="hero" id="home">
-
         <div class="hero-left">
 
             <p class="hello">
@@ -84,7 +117,6 @@
             </h1>
 
             <h2 id="typing"></h2>
-
             <p class="hero-text">
 
                 Passionate about building intelligent AI systems using
@@ -94,84 +126,133 @@
             </p>
 
             <div class="hero-buttons">
-
                 <a href="#projects" class="btn-primary">
-
                     View Projects
-
                 </a>
 
-                <a href="assets/resume.pdf" class="btn-secondary">
-
+                <a href="resume.pdf" class="btn-secondary">
                     Download Resume
-
                 </a>
 
             </div>
-
         </div>
-
         <div class="hero-right">
 
-            <div class="hero-circle">
+    <div class="hero-circle">
 
-                <i class="fa-solid fa-brain"></i>
+        <img src="tejaswini.png" alt="Peddireddy Tejaswini" class="profile-photo">
 
-            </div>
-
-        </div>
-
+    </div>
+</div>
     </section>
 
     <!--================ ABOUT ================-->
 
     <section class="about section" id="about">
-
         <h2 class="section-title">
-
             About Me
-
         </h2>
 
         <div class="about-container">
-
             <div class="about-image">
-
                 <img src="profile.png" alt="Profile">
-
             </div>
 
             <div class="about-content">
-
                 <p>
 
                     I'm a final-year Computer Science Engineering student
                     specializing in Artificial Intelligence and Machine Learning.
-
                 </p>
 
                 <p>
-
                     I enjoy solving real-world problems through AI.
                     My interests include Deep Learning,
                     Computer Vision,
                     Reinforcement Learning,
                     and Large Language Models.
-
                 </p>
 
                 <p>
 
                     My goal is to contribute to innovative AI solutions
                     that make technology more impactful and accessible.
-
                 </p>
 
             </div>
+        </div>
+    </section>
+
+    <!--================ EDUCATION ================-->
+
+<section class="education section" id="education">
+
+    <h2 class="section-title">
+        Education
+    </h2>
+
+    <div class="timeline">
+
+        <!-- College -->
+
+        <div class="timeline-item">
+
+            <h3>
+                B.Tech in Computer Science & Engineering (AI & ML)
+            </h3>
+
+            <span>
+                Presidency University | 2023 – 2027 
+            </span>
+
+            <p>
+                CGPA: <strong>9.34 / 10</strong><br>
+                Bengaluru, Karnataka
+            </p>
 
         </div>
 
-    </section>
+        <!-- PU -->
+
+        <div class="timeline-item">
+
+            <h3>
+                Pre-University (PCMB)
+            </h3>
+
+            <span>
+                St. Francis PU College | 2021 – 2023
+            </span>
+
+            <p>
+                Percentage: <strong>94%</strong><br>
+                Bengaluru, Karnataka
+            </p>
+
+        </div>
+
+        <!-- School -->
+
+        <div class="timeline-item">
+
+            <h3>
+                SSLC
+            </h3>
+
+            <span>
+                Ashok Kumar Reddy School | 2021
+            </span>
+
+            <p>
+                Percentage: <strong>97%</strong><br>
+                Kadapa, Andhra Pradesh
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
 
     <!--================ SKILLS ================-->
 
@@ -186,32 +267,47 @@
         <div class="skills-grid">
 
             <div class="skill-card">Python</div>
-
-            <div class="skill-card">TensorFlow</div>
-
-            <div class="skill-card">PyTorch</div>
-
-            <div class="skill-card">Machine Learning</div>
-
-            <div class="skill-card">Deep Learning</div>
-
-            <div class="skill-card">Computer Vision</div>
-
-            <div class="skill-card">Reinforcement Learning</div>
-
-            <div class="skill-card">NumPy</div>
-
-            <div class="skill-card">Pandas</div>
-
-            <div class="skill-card">Scikit-Learn</div>
-
             <div class="skill-card">SQL</div>
-
             <div class="skill-card">GitHub</div>
+            <div class="skill-card">Machine Learning</div>
+            <div class="skill-card">Deep Learning</div>
+            <div class="skill-card">Computer Vision</div>
+            <div class="skill-card">Reinforcement Learning</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">NLP</div>
+            <div class="skill-card">AWS</div>
+            <div class="skill-card">OOPS</div>
+            <div class="skill-card">DBMS</div>
+            <div class="skill-card">VS Code</div>
+            <div class="skill-card">Operating System</div>
 
         </div>
 
     </section>
+
+    <section class="skills section">
+
+    <h2 class="section-title">
+        Soft Skills
+    </h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">Communication</div>
+        <div class="skill-card">Leadership</div>
+        <div class="skill-card">Problem Solving</div>
+        <div class="skill-card">Teamwork</div>
+        <div class="skill-card">Public Speaking</div>
+        <div class="skill-card">Time Management</div>
+        <div class="skill-card">Adaptability</div>
+        <div class="skill-card">Multitasking</div>
+        <div class="skill-card">Analysis</div>
+        
+
+    </div>
+
+</section>
 
     <!--================ PROJECTS ================-->
 
@@ -223,99 +319,327 @@
 
         </h2>
 
-        <div class="project-grid">
+       <div class="project-card">
 
-            <div class="project-card">
+    
 
-                <h3>
+    <h3> Leaf Disease Detection using Deep Learning</h3>
 
-                    Bell Pepper Disease Detection
+    <p>
+        Developed a CNN-based leaf disease classification model using a dataset of 8,500+ labeled images.
+● Implemented data preprocessing, augmentation, and transfer learning using pre-trained CNN architectures (ResNet50,
+MobileNetV2).
+● Achieved 98% test accuracy while significantly reducing false positives, enabling scalable automated plant disease
+detection.
 
-                </h3>
+    </p>
 
-                <p>
+    <div class="tech">
 
-                    CNN-based image classification using ResNet50 and
-                    MobileNetV2 with approximately 98% accuracy.
-                    Trained on plants like bell pepper, Grapes, Potato. Which identifies 
-                    leaf diseases
+        <span>Python</span>
+        <span>TensorFlow</span>
+        <span>CNN</span>
 
-                </p>
+    </div>
 
-                <div class="tech">
+    <div class="project-buttons">
 
-                    <span>TensorFlow</span>
-                    <span>Python</span>
-                    <span>CNN</span>
-                    <span>Deep Learning</span>
+        <a href="https://github.com/Tejaswini-167/Bell-Pepper-Leaf-Disease-Detection-using-YOLOv8"
+           target="_blank"
+           class="project-btn">
 
-                </div>
+            <i class="fab fa-github"></i>
+            GitHub
+        </a>
+    </div>
+</div>
 
-            </div>
+          <div class="project-card">
 
-            <div class="project-card">
+    
+    <h3>AI Precision Spraying Drone</h3>
 
-                <h3>
+    <p>
+        Deployed an AI-powered precision spraying system using YOLOv8, OpenCV, and Raspberry Pi for real-time crop monitoring
+and leaf disease detection.
+● Fine-tuned a custom YOLOv8 object detection model on an annotated leaf disease dataset using Roboflow and Google
+Colab for real-time inference.
+● Designed a Flask web dashboard to stream live camera feeds, visualize detections, and automate pesticide spraying via
+GPIO control.
+    </p>
 
-                    AI Precision Spraying Drone
+    <div class="tech">
+        <span>Raspberry Pi</span>
+        <span>YOLOv8</span>
+        <span>OpenCV</span>
 
-                </h3>
+    </div>
 
-                <p>
+    <div class="project-buttons">
 
-                    AI-powered agricultural drone capable of detecting
-                    crop diseases and performing precision pesticide spraying.
-                    Built a mini prototype of a Ahriculture Drone Which detect plant disease
-                    and automatically sprays fertilizers in the affected region
+        <a href="https://github.com/Tejaswini-167/AI_Precision_Spraying_Drone"
+           target="_blank"
+           class="project-btn">
 
-                </p>
+            <i class="fab fa-github"></i>
 
-                <div class="tech">
+            GitHub
+        </a>
+    </div>
+</div>
 
-                    <span>Computer Vision</span>
+        
+<div class="project-card">
 
-                    <span>OpenCV</span>
+    
+    <h3>KINOS - Physiotheraphy</h3>
 
-                    <span>Python</span>
-                    <span>Drone Tech</span>
-                    <span>Raspberry Pi</span>
-                    
+    <p>
+        Developed and maintained 3 key pages of a live production website (fitnessfactory.fit) using HTML, CSS, and WordPress,
+ensuring cross-device compatibility across desktop, tablet, and mobile.
+● Tested and refined responsive UI components across 3 screen breakpoints (desktop, tablet, mobile), improving website
+usability and reducing layout inconsistencies.
 
-                </div>
+    </p>
 
-            </div>
+    <div class="tech">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Wordpress</span>
 
-            <div class="project-card">
+    </div>
 
-                <h3>
+    <div class="project-buttons">
 
-                    Missile Evasion using Deep RL
+        <a href="https://github.com/Tejaswini-167/KINOS-Project"
+           target="_blank"
+           class="project-btn">
 
-                </h3>
+            <i class="fab fa-github"></i>
+            GitHub
+        </a>
 
-                <p>
+    </div>
+</div>
+<div class="project-card">
 
-                    Implemented PPO, SAC, DDPG and TRPO algorithms
-                    for autonomous decision making.
+    
+    <h3>NLP Friend's Translator</h3>
 
-                </p>
+    <p>
+        Built an NLP text classification model to identify speakers from Friends TV series dialogue using a full preprocessing pipeline
+(tokenization, stopword removal, lemmatization, TF-IDF).
+● Evaluated and compared multiple ML models, assessing performance using accuracy, precision, recall, and F1-scor
+    </p>
 
-                <div class="tech">
+    <div class="tech">
+        <span>NLTK</span>
+        <span>word Sequencing</span>
+        <span>confusion matrix</span>
 
-                    <span>PyTorch</span>
+    </div>
 
-                    <span>RL</span>
+    <div class="project-buttons">
 
-                    <span>Gymnasium</span>
-                    <span>Issac Lab</span>
+        <a href="https://github.com/alirida8852/friends-nlp-project"
+           target="_blank"
+           class="project-btn">
 
-                </div>
+            <i class="fab fa-github"></i>
+            GitHub
+        </a>
 
-            </div>
+    </div>
+</div>
+<div class="project-card">
+
+    
+
+    <h3>AI-Powered Multilingual Video Dubbing System</h3>
+
+    <p>
+        Engineered a Raspberry Pi-based multilingual video translation system converting English videos into Indian regional
+languages with dubbed audio and synchronized subtitles.
+● Integrated speech recognition, machine translation, and text-to-speech (TTS) APIs to automate end-to-end multilingual
+video localization.
+● Supported multiple Indian regional languages, improving accessibility of video content for diverse audiences.
+    </p>
+
+    <div class="tech">
+        <span>Python</span>
+        <span>google Trans</span>
+        <span>machine translation</span>
+
+    </div>
+
+    <div class="project-buttons">
+
+        <a href="https://github.com/Tejaswini-167/EchoTrans"
+           target="_blank"
+           class="project-btn">
+
+            <i class="fab fa-github"></i>
+            GitHub
+        </a>
+
+    </div>
+</div>
+
+        </div>
+    </section>
+
+
+    <section class="section" id="certifications">
+
+<h2 class="section-title">
+
+
+Certifications
+
+</h2>
+
+<div class="project-grid">
+<div class="project-card">
+
+
+<h3>Introduction to Large Language Models</h3>
+
+<p>NPTEL</p>
+
+<a href="https://drive.google.com/file/d/14rcAi5trJ5O7HmygArAzGhDQyRb12QQV/view"
+target="_blank"
+class="project-btn">
+
+View Certificate
+
+</a>
+
+</div>
+
+<div class="project-card">
+
+
+<h3>Mathematical Foundations of ML</h3>
+
+<p>NPTEL</p>
+
+<a href="https://drive.google.com/file/d/14rcAi5trJ5O7HmygArAzGhDQyRb12QQV/view"
+class="project-btn">
+
+View Certificate
+
+</a>
+
+</div>
+
+<div class="project-card">
+
+
+
+<h3>Social Networks</h3>
+
+<p>NPTEL</p>
+
+<a href="https://onedrive.live.com/?qt=allmyphotos&photosData=%2Fshare%2F0B9C24A2231DA77D%21s1e0372efed6f432fb1c3d86cb096d7e6%3Fithint%3Dphoto%26e%3Dz0OC98%26migratedtospo%3Dtrue&cid=0B9C24A2231DA77D&id=0B9C24A2231DA77D%21s1e0372efed6f432fb1c3d86cb096d7e6&redeem=aHR0cHM6Ly8xZHJ2Lm1zL2kvYy8wYjljMjRhMjIzMWRhNzdkL0lRRHZjZ01lYi0wdlE3SEQyR3l3bHRmbUFXQ1JHMERhSGQzTm9JZkVhZlNDOW9ZP2U9ejBPQzk4&v=photos"
+class="project-btn">
+
+View Certificate
+
+</a>
+
+</div>
+<div class="project-card">
+
+
+<h3>Python for Beginners</h3>
+
+<p>SCALAR</p>
+
+<a href="https://1drv.ms/i/c/0b9c24a2231da77d/IQDGfZcDk1juQ6MekhM8GafpAVbXfXfjISpWxFIh2FEVQ1M?e=sLl7Hj"
+class="project-btn">
+
+View Certificate
+
+</a>
+
+</div>
+<div class="project-card">
+
+
+<h3>Building With Claude API </h3>
+
+<p>Anthropic</p>
+
+<a href="https://1drv.ms/b/c/0b9c24a2231da77d/IQDd10VSsRvCQ41utWbYOYr2Aau0nOnopPiCaMby9HeAfB8?e=Z35Byp"
+class="project-btn">
+
+View Certificate
+
+</a>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ===================== ACHIEVEMENTS ===================== -->
+
+<section class="section" id="achievements">
+
+    <h2 class="section-title">
+        Achievements
+    </h2>
+
+    <div class="achievement-row">
+
+        <div class="achievement-card"
+             data-achievement="top70">
+
+            <div class="icon">🏆</div>
+
+            <h3>Top 70</h3>
+
+            <p>Ranked among 502 teams in Raspberry Pi Project.</p>
 
         </div>
 
-    </section>
+        <div class="achievement-card"
+             data-achievement="hackathon">
+
+            <div class="icon">🌱</div>
+
+            <h3>Chip to Crop Hackathon</h3>
+
+            <p>Participated at Presidency University.</p>
+
+        </div>
+
+        <div class="achievement-card"
+             data-achievement="yoga">
+
+            <div class="icon">🧘</div>
+
+            <h3>AIU South Zone Yoga</h3>
+
+            <p>Represented Presidency University.</p>
+
+        </div>
+
+        <div class="achievement-card"
+             data-achievement="anchor">
+
+            <div class="icon">🎤</div>
+
+            <h3>Event Anchor</h3>
+
+            <p>Anchored multiple college events.</p>
+
+        </div>
+
+    </div>
+
+</section>
 
     <!--================ EXPERIENCE ================-->
 
@@ -373,7 +697,7 @@
         </a>
 
         <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/peddireddy-tejaswini-4250bb295/" target="_blank">
+        <a href="https://www.linkedin.com/in/tejaswini-peddireddy-4250bb295/" target="_blank">
             <i class="fab fa-linkedin"></i>
         </a>
 

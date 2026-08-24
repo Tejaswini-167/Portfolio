@@ -285,3 +285,353 @@ console.log(
 "%cWelcome to Tejaswini's Portfolio 🚀",
 "color:#4F8CFF;font-size:20px;font-weight:bold;"
 );
+
+
+/*=====================================
+ACHIEVEMENT DATA
+=====================================*/
+
+const achievementData = {
+
+    top70:{
+
+        title:"Top 70 among 502 Teams",
+
+        description:"Secured a Top 70 rank among 502 teams in the Raspberry Pi Innovation Challenge by developing an innovative IoT solution.",
+
+        details:`
+
+            <div class="detail-item">
+
+                <strong>🏆 Rank:</strong>
+
+                Top 70 / 502 Teams
+
+            </div>
+
+            <div class="detail-item">
+
+                <strong>📅 Year:</strong>
+
+                2025
+
+            </div>
+
+            <div class="detail-item">
+
+                <strong>📍 Venue:</strong>
+
+                Presidency University
+
+            </div>
+
+            <div class="detail-item">
+
+                <strong>💡 Category:</strong>
+
+                Raspberry Pi Innovation Challenge
+
+            </div>
+
+        `,
+
+        images:[
+
+            "raspberrypi2.png",
+            "raspberrypi1.png",
+            "raspberrypi3.png"
+
+        ],
+
+        certificate:"#",
+
+        event:"#"
+
+    },
+
+
+
+    hackathon:{
+
+        title:"Chip to Crop Hackathon",
+
+        description:"Participated in the Chip to Crop Hackathon and developed an AI solution for smart agriculture.",
+
+        details:`
+
+            <div class="detail-item">
+
+                <strong>🌱 Theme:</strong>
+
+                Smart Agriculture
+
+            </div>
+
+            <div class="detail-item">
+
+                <strong>📅 Year:</strong>
+
+                2025
+
+            </div>
+
+            <div class="detail-item">
+
+                <strong>🏫 Organizer:</strong>
+
+                Presidency University
+
+            </div>
+
+        `,
+
+        images:[
+
+            "hackathon.png",
+
+            "hackathon1.png",
+
+            "hackathon2.png",
+
+            "hackathon3.png",
+
+            "hackathon4.png",
+
+            "hackathon5.png"
+
+        ],
+
+        certificate:"#",
+
+        event:"#"
+
+    },
+
+
+
+    yoga:{
+
+        title:"AIU South Zone Yoga",
+
+        description:"Represented Presidency University in the AIU South Zone Inter-University Yoga Championship.",
+
+        details:`
+
+            <div class="detail-item">
+
+                <strong>🧘 Category:</strong>
+
+                Yoga
+
+            </div>
+
+            <div class="detail-item">
+
+                <strong>📅 Year:</strong>
+
+                2025
+
+            </div>
+
+            <div class="detail-item">
+
+                <strong>🏫 Represented:</strong>
+
+                Presidency University
+
+            </div>
+
+        `,
+
+        images:[
+
+            "yoga5.png",
+
+            "yoga1.png",
+
+            "yoga 2.png",
+
+            "yoga3.png",
+
+            "yoga4.png",
+
+            "yoga6.png",
+
+            "yoga7.png",
+
+            "yoga8.png"
+
+        ],
+
+        certificate:"#",
+
+        event:"#"
+
+    },
+
+
+
+    anchor:{
+
+        title:"College Event Anchor",
+
+        description:"Anchored multiple technical, cultural and sports events at Presidency University.",
+
+        details:`
+
+            <div class="detail-item">
+
+                <strong>🎤 Role:</strong>
+
+                Event Anchor
+
+            </div>
+
+            <div class="detail-item">
+
+                <strong>🏫 College:</strong>
+
+                Presidency University
+
+            </div>
+
+            <div class="detail-item">
+
+                <strong>⭐ Events:</strong>
+
+                Sports Day, Tech Fest, Cultural Fest
+
+            </div>
+
+        `,
+
+        images:[
+
+            "anchoring1.png",
+
+            "anchoring2.png"
+
+        ],
+
+        certificate:"#",
+
+        event:"#"
+
+    }
+
+};
+
+
+/*=====================================
+ELEMENTS
+=====================================*/
+
+const cards = document.querySelectorAll(".achievement-card");
+
+const modal = document.getElementById("achievementModal");
+
+const closeBtn = document.querySelector(".close-modal");
+
+const title = document.getElementById("modalTitle");
+
+const desc = document.getElementById("modalDescription");
+
+const details = document.getElementById("modalDetails");
+
+const mainImage = document.getElementById("mainImage");
+
+const thumbs = document.querySelectorAll(".thumb");
+
+const certificateBtn=document.getElementById("certificateBtn");
+
+const eventBtn=document.getElementById("eventBtn");
+
+
+/*=====================================
+OPEN MODAL
+=====================================*/
+
+cards.forEach(card=>{
+
+card.onclick=()=>{
+
+const key=card.dataset.achievement;
+
+const data=achievementData[key];
+
+title.innerHTML=data.title;
+
+desc.innerHTML=data.description;
+
+details.innerHTML=data.details;
+
+mainImage.src=data.images[0];
+
+certificateBtn.href=data.certificate;
+
+eventBtn.href=data.event;
+
+
+/* thumbnails */
+
+thumbs.forEach((thumb,index)=>{
+
+if(data.images[index]){
+
+thumb.style.display="block";
+
+thumb.src=data.images[index];
+
+thumb.onclick=()=>{
+
+mainImage.src=data.images[index];
+
+};
+
+}
+
+else{
+
+thumb.style.display="none";
+
+}
+
+});
+
+
+modal.classList.add("show");
+
+};
+
+});
+
+
+/*=====================================
+CLOSE
+=====================================*/
+
+closeBtn.onclick=()=>{
+
+modal.classList.remove("show");
+
+};
+
+window.onclick=(e)=>{
+
+if(e.target==modal){
+
+modal.classList.remove("show");
+
+}
+
+};
+
+document.addEventListener("keydown",(e)=>{
+
+if(e.key==="Escape"){
+
+modal.classList.remove("show");
+
+}
+
+});
